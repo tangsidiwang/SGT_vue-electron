@@ -1,29 +1,26 @@
 <script setup>
 import {reactive} from "vue"//引入reactive响应式数据
-// import { stores } from "../stores/stores";//引入全局数据
+import { routerStore } from "../stores/stores";//引入全局数据
 
 
-const head= reactive({//响应式
-    router:0
-  })
-
+const router=routerStore()
 const Tool=()=>{
-    head.router=0
+    router.app_stores.route=0
 }
 const Sett=()=>{
-    head.router=1
+    router.app_stores.route=1
 }
 const About=()=>{
-    head.router=2
+    router.app_stores.route=2
 }
 </script>
 
 <template>
     <div class="head">
         <img  class="img_top"src="/src/assets/border.png" alt="top">
-        <p class="title" :class="{active:head.router==0 }"><router-link class="link" to="/">Tool</router-link></p>
-        <p class="title" :class="{active:head.router==1 }"><router-link class="link" to="/sett">Sett</router-link></p>
-        <p class="title" :class="{active:head.router==2 }"><router-link class="link" to="/About">About</router-link></p>
+        <p class="title" :class="{active:router.app_stores.route==0 }"><router-link class="link" to="/" @click="Tool">Tool</router-link></p>
+        <p class="title" :class="{active:router.app_stores.route==1 }"><router-link class="link" to="/sett" @click="Sett">Sett</router-link></p>
+        <p class="title" :class="{active:router.app_stores.route==2 }"><router-link class="link" to="/About"  @click="About">About</router-link></p>
     </div>
 </template>
 
