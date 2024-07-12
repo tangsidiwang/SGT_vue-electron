@@ -1,6 +1,5 @@
 const { app,BrowserWindow,ipcMain } = require("electron");
 const path = require("path");
-const { devtools } = require("vue");
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -8,7 +7,7 @@ function createWindow() {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
-      // devTools:false
+      devTools:false //关闭调试工具
     },
     autoHideMenuBar: true,
   });
@@ -20,6 +19,7 @@ function createWindow() {
 ipcMain.handle("sbsb", async () => {
   console.log("sbsb11");
   return "AAA全国飞aaaaasssssssssssssssssssssssa";
+  //拉取测试
 });
 app.whenReady().then(() => {
   createWindow();
