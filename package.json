@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "main": "main.js",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,6 +10,7 @@
     "electron:start": "npm run build && electron ."
   },
   "dependencies": {
+    "electron": "^31.2.0",
     "vue": "^3.4.29"
   },
   "devDependencies": {
@@ -18,5 +18,3 @@
     "vite": "^5.3.1"
   }
 }
-
-
