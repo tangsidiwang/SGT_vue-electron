@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "electron:start": "npm run build && electron ."
+    "wowo": "npm run build && electron ."
   },
   "dependencies": {
     "electron": "^31.2.0",
