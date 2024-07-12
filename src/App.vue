@@ -1,12 +1,10 @@
 <script setup>
-const anniu=async ()=>{
-    console.log(await tongs.sbsb1())
-}
+
 </script>
 
 <template>
-  hhh
-  <button @click="anniu">aaa</button>
+<router-view></router-view>
+
 </template>
 
 <style scoped>
