@@ -47,7 +47,7 @@ const checkbox=(index)=>{//复选框点击事件,index为第index个复选框
 <template>
   <Head_gh/>
   <div class="biao">
-    <table >
+  <table >
     <tr v-for="(item,index) in appmain.tableData" :key="index">
       <td><p>功能{{ index }}</p></td>
       <td><button>设置</button><input type="text"></td>

@@ -1,10 +1,20 @@
-<<<<<<< HEAD
-# Vue 3 + Vite
+## ⚡ Introduction
+未实装功能的vue+electron项目
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 直接启动
+-**从零开始**
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
-=======
-# SGT_vue-electron
-功能未知，使用vue与electron所创建的桌面应用
->>>>>>> e8b72e0c60609995fff3377eb82c6f41c1c90607
+```
+git clone https://github.com/tangsidiwang/sgt_Vue-electron.git
+cd sgt_Vue-electron
+
+npm install
+npm run wowo
+//以上即可启动
+//如果出现某个包报错，可以尝试全局安装electron
+cnpm install electron -g
+```
+
+
+
+
