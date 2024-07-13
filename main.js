@@ -7,7 +7,7 @@ function createWindow() {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
-      devTools:false //关闭调试工具
+      // devTools:false //关闭调试工具
     },
     autoHideMenuBar: true,
   });
